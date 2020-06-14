@@ -71,6 +71,7 @@ public class MainRestController {
         return new ResponseEntity<>(HttpStatus.NOT_MODIFIED);
     }
 
+
     @DeleteMapping(path = "/delete/{user_id}/{id}")
     @CrossOrigin("*")
     public @ResponseBody

@@ -36,7 +36,7 @@ public class User  extends BaseEntity{
     private int age;
     @ManyToMany(fetch = FetchType.LAZY ,cascade = {CascadeType.ALL})
     @JoinTable(name="user_set",
-            joinColumns=
+            joinColumns=    
             @JoinColumn(name="user_id", referencedColumnName="id"),
             inverseJoinColumns=
             @JoinColumn(name="set_id", referencedColumnName="id")
